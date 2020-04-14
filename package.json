@@ -1,23 +1,34 @@
 {
-  "name": "express-boilerplate_andrewtyl",
-  "version": "1.0.0",
+  "name": "express-boilerplate",
   "description": "A boilerplate for express. Please follow instructions in readme before starting project.",
-  "main": "index.js",
+  "version": "0.1.0",
+  "author": "Andrew Jessen-Tyler",
+  "homepage": "https://github.com/andrewtyl/express-boilerplate",
+  "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  ],
+  "engines": {
+    "node": "10.16.3",
+    "npm": "6.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andrewtyl/express-boilerplate.git"
+  },
+
+  "keywords": [
+    "express"
+  ],
+  "main": "src/server.js",
   "scripts": {
     "test": "mocha --require test/setup.js",
     "start": "node src/server.js",
     "dev": "nodemon src/server.js",
     "predeploy": "mocha --require test/setup.js ; npm audit"
-  },
-  "keywords": [],
-  "author": "Andrew Jessen-Tyler",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/thinkful-ei-firefly/express-boilerplate_andrewtyl.git"
-  },
-  "engines": {
-    "node": "12.9.1"
   },
   "dependencies": {
     "cors": "^2.8.5",
